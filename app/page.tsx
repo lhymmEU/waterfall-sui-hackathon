@@ -16,26 +16,25 @@ export default function Home() {
             transition={{ duration: 0.6 }}
           >
             <h1 className="text-4xl md:text-6xl font-bold tracking-tight mb-6">
-              Welcome to{" "}
+              Sui{" "}
               <span className="bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">
                 Waterfall
               </span>
             </h1>
             <p className="text-lg md:text-xl text-gray-600 dark:text-gray-300 mb-10 max-w-2xl mx-auto">
-              The modern platform connecting event hosts with attendees. 
-              Seamless organization, memorable experiences.
+              Make your events unforgettable.
             </p>
           </motion.div>
 
           <motion.div
-            className="flex flex-col md:flex-row gap-6 justify-center"
+            className="flex flex-col md:flex-row gap-6 justify-center items-center"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
             <Link 
               href="/host/create"
-              className="group relative overflow-hidden rounded-lg bg-blue-600 px-6 py-4 text-white shadow-md transition-all hover:shadow-lg"
+              className="group relative overflow-hidden rounded-full w-1/2 bg-blue-600 px-6 py-4 text-white shadow-md transition-all hover:shadow-lg"
             >
               <span className="relative z-10 flex items-center justify-between">
                 <span className="text-xl font-medium">Event Host</span>
@@ -51,7 +50,7 @@ export default function Home() {
             
             <Link 
               href="/attendee/attend"
-              className="group relative overflow-hidden rounded-lg bg-indigo-600 px-6 py-4 text-white shadow-md transition-all hover:shadow-lg"
+              className="group relative overflow-hidden rounded-full w-1/2 bg-indigo-600 px-6 py-4 text-white shadow-md transition-all hover:shadow-lg"
             >
               <span className="relative z-10 flex items-center justify-between">
                 <span className="text-xl font-medium">Attendee</span>

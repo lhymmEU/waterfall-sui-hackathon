@@ -169,12 +169,12 @@ export default function AddFriends() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
       >
-        <div className="mb-8 bg-white dark:bg-gray-800 rounded-lg shadow-md p-5">
+        <div className="mb-8 bg-white dark:bg-gray-800 rounded-lg border border-gray-200 dark:border-gray-700 p-5">
           <div className="flex flex-col md:flex-row gap-3">
             <motion.button
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
-              className="px-6 py-3 bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-medium rounded-md shadow-sm hover:shadow-md transition-all whitespace-nowrap"
+              className="disabled px-6 py-3 bg-gray-300 text-white font-medium rounded-md shadow-sm hover:shadow-md transition-all whitespace-nowrap"
             >
               Scan to Add
             </motion.button>
@@ -197,7 +197,7 @@ export default function AddFriends() {
             {myEvents.map((event) => (
               <div
                 key={event.event_name}
-                className="bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden"
+                className="bg-white dark:bg-gray-800 rounded-lg border border-gray-200 dark:border-gray-700 overflow-hidden"
               >
                 <motion.button
                   onClick={() => toggleEvent(event.event_name)}

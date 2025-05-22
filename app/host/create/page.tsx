@@ -135,7 +135,7 @@ export default function CreateEventPage() {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
-        className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6"
+        className="bg-white dark:bg-gray-800 rounded-lg border border-gray-200 dark:border-gray-700 p-6"
       >
         <h2 className="text-2xl font-bold mb-6">Create New Event</h2>
 

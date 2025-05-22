@@ -69,7 +69,7 @@ export default function DashboardLayout({
       </div>
 
       {/* Mobile Bottom Navigation */}
-      <nav className="md:hidden fixed bottom-4 left-0 right-0 mx-auto w-[90%] max-w-md bg-white dark:bg-gray-900 rounded-full shadow-lg border border-gray-200 dark:border-gray-800 z-10">
+      <nav className="md:hidden fixed bottom-4 left-0 right-0 mx-auto w-[90%] max-w-md bg-white dark:bg-gray-900 rounded-full shadow-sm border border-gray-200 dark:border-gray-800 z-10">
         <motion.div
           className="flex justify-around py-3"
           initial={{ y: 100 }}
